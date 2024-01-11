@@ -1,0 +1,14 @@
+{
+  "name": "frontend-15",
+  "version": "1.0.0",
+  "description": "Frontend project 15",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Erick ngechu",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}
