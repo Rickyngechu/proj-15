@@ -22,8 +22,12 @@
     font-family: "Public Sans", sans-serif;
     line-height: 1.6;
     font-weight: 400;
+    font-size: 1.8rem;
   }
 
+  img {
+    max-width: 100%;
+  }
   a {
     text-decoration: none;
   }
