@@ -21,7 +21,7 @@
   body {
     font-family: "Public Sans", sans-serif;
     line-height: 1.6;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 1.8rem;
   }
 
@@ -38,4 +38,11 @@
 
 /* This is for the id's and classes */
 @layer components {
+  /* Herosection */
+  .hero-img {
+    background-image: url("../images/bg-intro-desktop.svg");
+    background-position: 53%;
+    background-size: 800px 400px;
+    background-repeat: no-repeat;
+  }
 }
