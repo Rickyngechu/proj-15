@@ -12,7 +12,12 @@ module.exports = {
       "Very-Light-Gray": "hsl(0, 0%, 98%)",
       White: " hsl(0, 0%, 100%)",
     },
-    extend: {},
+    extend: {
+      gridTemplateColumns: {
+        // Simple 16 column grid
+        "choose-us": "repeat(auto-fit, minmax(20rem, 1fr))",
+      },
+    },
   },
   plugins: [],
 };

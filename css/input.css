@@ -22,7 +22,7 @@
     font-family: "Public Sans", sans-serif;
     line-height: 1.6;
     font-weight: 300;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 
   img {
@@ -41,8 +41,33 @@
   /* Herosection */
   .hero-img {
     background-image: url("../images/bg-intro-desktop.svg");
-    background-position: 53%;
-    background-size: 800px 400px;
+    background-position: 35%;
+    background-size: 900px 400px;
     background-repeat: no-repeat;
+  }
+
+  .btn {
+    @apply py-3 px-6 rounded-full bg-gradient-to-r text-base font-bold text-White;
+  }
+  /* .cont {
+    @apply;
+  } */
+
+  /* Why choose us */
+  .choose-item {
+    @apply text-center  px-2;
+  }
+  .choose-img {
+    @apply mx-auto;
+  }
+  .chooseitem-head {
+    @apply font-normal text-lg text-Dark-Blue;
+  }
+  .chooseitem-txt {
+    @apply text-sm font-medium text-Grayish-Blue;
+  }
+
+  /* Articles */
+  .article {
   }
 }
