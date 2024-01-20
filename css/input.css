@@ -69,5 +69,16 @@
 
   /* Articles */
   .article {
+    @apply rounded-md bg-White overflow-hidden;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+  }
+  .art-by {
+    @apply text-Grayish-Blue text-xs mb-4;
+  }
+  .art-head {
+    @apply font-normal text-lg text-Dark-Blue leading-5 mb-2;
+  }
+  .art-txt {
+    @apply text-Grayish-Blue text-sm;
   }
 }

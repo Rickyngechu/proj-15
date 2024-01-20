@@ -14,8 +14,9 @@ module.exports = {
     },
     extend: {
       gridTemplateColumns: {
-        // Simple 16 column grid
-        "choose-us": "repeat(auto-fit, minmax(20rem, 1fr))",
+        // Custom grids
+        "choose-us": "repeat(auto-fit, minmax(18rem, 1fr))",
+        articles: "repeat(auto-fit, minmax(15rem, 1fr))",
       },
     },
   },
