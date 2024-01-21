@@ -45,11 +45,16 @@
     background-size: 60rem 40rem;
     background-repeat: no-repeat;
   } */
+
+  /* Mobile nav-container */
   .mb-ct {
     width: 100%;
     height: 100%;
     background-color: hsla(0, 0%, 0%, 0.038);
     z-index: 5;
+    opacity: 1;
+
+    transition: all 0.3s ease;
   }
   .mobile-nav {
     position: fixed;
@@ -62,6 +67,20 @@
     align-items: center;
     padding: 1.5rem;
     border-radius: 5px;
+    opacity: 1;
+    visibility: visible;
+
+    transition: all 0.4s ease;
+  }
+  .hidden {
+    width: 0;
+    opacity: 0;
+  }
+  .hide-nav-mobile {
+    transform: translateY(3rem);
+    opacity: 0;
+    display: none;
+    /*visibility: hidden; */
   }
   .hamburger {
     z-index: 80;
