@@ -4,10 +4,12 @@ const mobileCont = document.querySelector(".mb-ct");
 const mobileNav = document.querySelector(".mobile-nav");
 
 humb.addEventListener("click", function () {
-  const src = this.getAttribute("src");
-  console.log("You have clicked me!");
-  console.log(src);
-  humb.src = "/images/icon-close.svg";
+  if (mobileCont.classList.contains("hidden")) {
+    humb.src = "/images/icon-close.svg";
+  } else {
+    humb.src = "/images/icon-hamburger.svg";
+  }
 
   mobileNav.classList.toggle("hide-nav-mobile");
+  mobileCont.classList.toggle("hidden");
 });
