@@ -2782,6 +2782,14 @@ ul {
 
 /* This is for the id's and classes */
 
+@media not all and (min-width: 768px){
+  .max-md\:hidden{
+    display: none;
+    width: 0;
+    opacity: 0;
+  }
+}
+
 @media (min-width: 640px){
   .sm\:container{
     width: 100%;
@@ -2847,6 +2855,12 @@ ul {
   text-align: center;
 }
 
+@media not all and (min-width: 768px){
+  .max-md\:hidden{
+    display: none;
+  }
+}
+
 @media (min-width: 640px){
   .sm\:underline{
     text-decoration-line: underline;
@@ -2854,6 +2868,10 @@ ul {
 }
 
 @media (min-width: 768px){
+  .md\:visible{
+    visibility: visible;
+  }
+
   .md\:z-50{
     z-index: 50;
   }

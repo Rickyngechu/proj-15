@@ -22,7 +22,7 @@
 
   <body class="bg relative">
     <!-- Mobile navigation -->
-    <div class="mb-ct absolute hidden">
+    <div class="mb-ct absolute hidden md:hidden">
       <div class="mobile-nav [&>a]:text-base [&>a]:mb-3 hide-nav-mobile">
         <a href="#" class="nav-link">Home</a>
         <a href="#" class="nav-link">About</a>
@@ -38,7 +38,7 @@
           <nav class="navi justify-between items-center py-4 flex px-3 z-2">
             <img src="images/logo.svg" alt="easybank" />
             <div
-              class="links-cont mx-auto [&>a]:text-base [&>a]:ml-6 [&>a]:text-Grayish-Blue [&>a]:cursor-pointer [&>a]:font-bold [&>a]:py-3 md:block hidden"
+              class="links-cont mx-auto [&>a]:text-base [&>a]:ml-6 [&>a]:text-Grayish-Blue [&>a]:cursor-pointer [&>a]:font-bold [&>a]:py-3 max-md:hidden"
             >
               <a href="#" class="nav-link">Home</a>
               <a href="#" class="nav-link">About</a>
@@ -46,7 +46,7 @@
               <a href="#" class="nav-link">Blog</a>
               <a href="#" class="nav-link">Careers</a>
             </div>
-            <a href="#" class="btn invite md:block hidden">Request Invite</a>
+            <a href="#" class="btn invite max-md:hidden">Request Invite</a>
             <img
               src="images/icon-hamburger.svg"
               alt="hamburger"
@@ -67,6 +67,16 @@
               alt="desktop"
               class="bg-intro"
             />
+            <!-- <img
+              src="images/bg-intro-mobile.svg"
+              alt="background"
+              srcset="
+                images/bg-intro-mobile.svg  480w,
+                images/bg-intro-desktop.svg 800w
+              "
+              sizes="(max-width:620px)480px,800px"
+              class="bg-intro"
+            /> -->
             <img
               src="images/image-mockups.png"
               alt="mockups"
