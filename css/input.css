@@ -39,15 +39,19 @@
 /* This is for the id's and classes */
 @layer components {
   /* Herosection */
-  .hero-img {
+  /* .hero-img {
     background-image: url("../images/bg-intro-desktop.svg");
-    background-position: 35%;
-    background-size: 900px 400px;
+    /* background-position: 35%; 
+    background-size: 60rem 40rem;
     background-repeat: no-repeat;
+  } */
+  .bg-intro {
+    position: absolute;
+    top: 0;
+    right: 0;
   }
-
   .btn {
-    @apply py-3 px-6 rounded-full bg-gradient-to-r text-base font-bold text-White;
+    @apply py-3 px-6 rounded-full bg-gradient-to-r text-base md:text-lg font-bold text-White;
   }
   /* .cont {
     @apply;
@@ -55,16 +59,16 @@
 
   /* Why choose us */
   .choose-item {
-    @apply text-center  px-2;
+    @apply text-center  px-2 md:text-left;
   }
   .choose-img {
-    @apply mx-auto;
+    @apply mx-auto md:mx-0;
   }
   .chooseitem-head {
-    @apply font-normal text-lg text-Dark-Blue;
+    @apply font-normal text-lg text-Dark-Blue md:text-xl;
   }
   .chooseitem-txt {
-    @apply text-sm font-medium text-Grayish-Blue;
+    @apply text-sm font-medium text-Grayish-Blue md:text-base;
   }
 
   /* Articles */

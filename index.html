@@ -21,36 +21,47 @@
   </head>
 
   <body class="bg">
-
-    <div class="header bg-Very-Light-Gray">
-
-      <div class="cont w-[80rem] max-w-full mx-auto">
-        <header
-          class="header flex justify-between items-center py-4 px-2 bg-White"
-        >
+    <div class="header bg-Very-Light-Gray md:z-10">
+      <header
+        class="header flex justify-between items-center py-4 px-2 bg-White"
+      >
+        <div class="cont w-[80rem] max-w-full mx-auto">
           <img src="images/logo.svg" alt="easybank" />
 
           <img src="images/icon-hamburger.svg" alt="hamburger" />
-        </header>
-
-        <div class="hero-section bg-Very-Light-Gray flex flex-col">
-
-          <div class="hero-img overflow-hidden">
+        </div>
+      </header>
+      <div class="cont w-[90rem] max-w-full mx-auto">
+        <div
+          class="hero-section bg-Very-Light-Gray flex flex-col md:flex-row gap-5 md:items-center"
+        >
+          <div
+            class="hero-img overflow-y-hidden md:overflow-x-visible md:order-1 md:w-[55%] relative"
+          >
+            <img
+              src="images/bg-intro-desktop.svg"
+              alt="desktop"
+              class="bg-intro"
+            />
             <img
               src="images/image-mockups.png"
               alt="mockups"
-              class="-translate-y-9"
+              class="-translate-y-9 md:z-50"
             />
           </div>
 
-          <div class="hero-txt text-center px-5 py-8 mb-10">
+          <div
+            class="hero-txt text-center md:text-left px-5 py-8 md:py-3 mb-10 md:w-[45%]"
+          >
             <h1
-              class="main-heading font-light text-3xl text-Dark-Blue leading-9 mb-5"
+              class="main-heading font-light text-3xl text-Dark-Blue leading-9 mb-5 md:mb-10 md:text-7xl"
             >
               Next generation digital banking
             </h1>
 
-            <p class="text-sm font-medium text-Grayish-Blue mb-5">
+            <p
+              class="text-sm font-medium text-Grayish-Blue mb-5 md:mb-7 md:text-base md:w-[60%]"
+            >
               Take you financial life online.Your Easybank account will be a
               one-stop-shop for spending,saving,budgeting,investing and much
               more.
@@ -65,25 +76,24 @@
     </div>
 
     <main>
-      <section class="choose-us bg-Light-Grayish-Blue py-10">
+      <section class="choose-us bg-Light-Grayish-Blue py-10 md:py-20">
         <div class="cont w-[80rem] max-w-full mx-auto">
-
-          <div class="subheading-det text-center mb-12">
+          <div class="subheading-det text-center mb-12 md:text-left md:mb-16">
             <h2
-              class="sub-heading font-normal text-2xl text-Dark-Blue leading-7 mb-6"
+              class="sub-heading font-normal text-2xl text-Dark-Blue leading-7 mb-6 md:text-4xl"
             >
-              Why choose <br />
-              Easybank?
+              Why choose Easybank?
             </h2>
-            <p class="subheading-txrt text-sm font-medium text-Grayish-Blue">
+            <p
+              class="subheading-txrt text-sm font-medium text-Grayish-Blue md:w-[40%] md:text-base"
+            >
               We leverage Open Banking to turn your bank account into your
               financial hub. Control your finances like never before.
             </p>
           </div>
 
           <div class="chooseus-cont grid grid-cols-choose-us gap-10">
-
-            <div class="item-1  choose-item">
+            <div class="item-1 choose-item">
               <img
                 src="images/icon-online.svg"
                 alt="banking"
@@ -122,7 +132,7 @@
               </p>
             </div>
 
-            <div class="item-5 choose-item">
+            <div class="item-4 choose-item">
               <img src="images/icon-api.svg" alt="api" class="choose-img" />
               <span class="chooseitem-head">Open Api</span>
               <p class="chooseitem-txt">
@@ -133,13 +143,13 @@
           </div>
         </div>
       </section>
-      <section class="section-articles py-10 bg-Very-Light-Gray">
+      <section class="section-articles py-10 bg-Very-Light-Gray md:py-16">
         <div class="cont w-[80rem] max-w-full mx-auto">
-
-          <h3 class="article-heading mb-6 text-center">Latest Articles</h3>
+          <h3 class="article-heading mb-6 text-center md:text-left">
+            Latest Articles
+          </h3>
 
           <div class="articles px-3 grid grid-cols-articles gap-9">
-
             <article class="article-1 article">
               <img src="images/image-currency.jpg" alt="Currency" />
               <ul class="py-4 px-7">
@@ -179,7 +189,7 @@
                   The world is getting smaller and we're becoming more mobile.So
                   why should you be forced to only receive money in a single...
                 </li>
-              </ul class="py-4 px-7">
+              </ul>
             </article>
 
             <article class="article-1 article">
@@ -198,41 +208,63 @@
             </article>
           </div>
         </div>
-
       </section>
-
     </main>
-    <footer class="section-footer py-10  bg-Dark-Blue">
-      <div class="contw-[80rem] max-w-full mx-auto">
-        <div class="footer text-center flex flex-col gap-6 items-center">
-          <div class="img "><img src="images/footer-logo.svg" alt="logo" class="mx-auto"></div>
+    <footer class="section-footer py-10 bg-Dark-Blue">
+      <div class="cont w-[80rem] max-w-full mx-auto">
+        <div
+          class="footer text-center flex flex-col gap-6 items-center md:flex-row"
+        >
+          <div class="d">
+            <div class="img">
+              <img src="images/footer-logo.svg" alt="logo" class="mx-auto" />
+            </div>
 
-          <div class="socials flex gap-5 justify-center">
-            <img src="images/icon-facebook.svg" alt="icon-facebook">
-            <img src="images/icon-youtube.svg" alt="icon-youtube">
-            <img src="images/icon-twitter.svg" alt="icon-twitter">
-            <img src="images/icon-pinterest.svg" alt="icon-pinterest">
-            <img src="images/icon-instagram.svg" alt="icon-instagram">
+            <div class="socials flex gap-5 justify-center md:mt-7">
+              <img src="images/icon-facebook.svg" alt="icon-facebook" />
+              <img src="images/icon-youtube.svg" alt="icon-youtube" />
+              <img src="images/icon-twitter.svg" alt="icon-twitter" />
+              <img src="images/icon-pinterest.svg" alt="icon-pinterest" />
+              <img src="images/icon-instagram.svg" alt="icon-instagram" />
+            </div>
           </div>
-
-          <ul class="[&>li]:text-Light-Grayish-Blue [&>li]:text-base text-center mt-7 [&>li]:mb-3">
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">Support</a></li>
-            <li><a href="#">Privacy Policy</a></li>
+          <ul
+            class="[&>li]:text-Light-Grayish-Blue [&>li]:text-base text-center mt-7 [&>li]:mb-3"
+          >
+            <div>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Blog</a></li>
+            </div>
+            <div>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Support</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </div>
           </ul>
-
-          <a href="#" class="btn  from-Lime-Green to-Bright-Cyan">Request Invite</a>
+          <div>
+            <a href="#" class="btn from-Lime-Green to-Bright-Cyan"
+              >Request Invite</a
+            >
+            <p
+              class="copyright md:block hidden md:text-Grayish-Blue md:text-lg md:mt-8"
+            >
+              &copy; Easybank.All rights reserved
+            </p>
+          </div>
         </div>
       </div>
     </footer>
-    <div class="attribution bg-Dark-Blue text-center  text-sm text-Light-Grayish-Blue">
+    <div
+      class="attribution bg-Dark-Blue text-center text-sm text-Light-Grayish-Blue"
+    >
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="https://rickyportf.netlify.app/" class="text-Lime-Green">Erick Ngechu</a>.
+      >. Coded by
+      <a href="https://rickyportf.netlify.app/" class="text-Lime-Green"
+        >Erick Ngechu</a
+      >.
     </div>
   </body>
 </html>
