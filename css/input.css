@@ -45,13 +45,46 @@
     background-size: 60rem 40rem;
     background-repeat: no-repeat;
   } */
+  .mb-ct {
+    width: 100%;
+    height: 100%;
+    background-color: hsla(0, 0%, 0%, 0.038);
+    z-index: 5;
+  }
+  .mobile-nav {
+    position: fixed;
+    top: 4rem;
+    margin-left: 5%;
+    width: 90%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+    border-radius: 5px;
+  }
+  .hamburger {
+    z-index: 80;
+  }
+  .navi {
+    z-index: 100;
+  }
+  .nav-link {
+    border-bottom: 2px solid transparent;
+
+    transition: all 0.5s ease;
+  }
+  .nav-link:hover {
+    color: hsl(233, 26%, 24%);
+    border-bottom: 2px solid hsl(233, 26%, 24%);
+  }
   .bg-intro {
     position: absolute;
     top: 0;
     right: 0;
   }
   .btn {
-    @apply py-3 px-6 rounded-full bg-gradient-to-r text-base md:text-lg font-bold text-White;
+    @apply py-3 px-6 rounded-full bg-gradient-to-r from-Lime-Green to-Bright-Cyan text-base md:text-lg font-bold text-White md:hover:opacity-70;
   }
   /* .cont {
     @apply;
@@ -77,12 +110,12 @@
     box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
   }
   .art-by {
-    @apply text-Grayish-Blue text-xs mb-4;
+    @apply text-Grayish-Blue text-xs mb-4 md:text-sm;
   }
   .art-head {
-    @apply font-normal text-lg text-Dark-Blue leading-5 mb-2;
+    @apply font-normal text-lg text-Dark-Blue leading-5 mb-2 md:text-xl;
   }
   .art-txt {
-    @apply text-Grayish-Blue text-sm;
+    @apply text-Grayish-Blue text-sm md:text-base;
   }
 }

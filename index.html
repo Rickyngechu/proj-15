@@ -20,18 +20,41 @@
     <link rel="stylesheet" href="css/output.css" />
   </head>
 
-  <body class="bg">
-    <div class="header bg-Very-Light-Gray md:z-10">
-      <header
-        class="header flex justify-between items-center py-4 px-2 bg-White"
-      >
-        <div class="cont w-[80rem] max-w-full mx-auto">
-          <img src="images/logo.svg" alt="easybank" />
+  <body class="bg relative">
+    <div class="mb-ct absolute">
+      <div class="mobile-nav [&>a]:text-base [&>a]:mb-3">
+        <a href="#" class="nav-link">Home</a>
+        <a href="#" class="nav-link">About</a>
+        <a href="#" class="nav-link">Contact</a>
+        <a href="#" class="nav-link">Blog</a>
+        <a href="#" class="nav-link">Careers</a>
+      </div>
+    </div>
 
-          <img src="images/icon-hamburger.svg" alt="hamburger" />
+    <div class="header bg-Very-Light-Gray">
+      <header class="header bg-White">
+        <div class="cont w-[80rem] max-w-full mx-auto z-10">
+          <nav class="navi justify-between items-center py-4 flex px-3 z-2">
+            <img src="images/logo.svg" alt="easybank" />
+            <div
+              class="links-cont mx-auto [&>a]:text-base [&>a]:ml-6 [&>a]:text-Grayish-Blue [&>a]:cursor-pointer [&>a]:font-bold [&>a]:py-3 md:block hidden"
+            >
+              <a href="#" class="nav-link">Home</a>
+              <a href="#" class="nav-link">About</a>
+              <a href="#" class="nav-link">Contact</a>
+              <a href="#" class="nav-link">Blog</a>
+              <a href="#" class="nav-link">Careers</a>
+            </div>
+            <a href="#" class="btn invite md:block hidden">Request Invite</a>
+            <img
+              src="images/icon-hamburger.svg"
+              alt="hamburger"
+              class="hamburger md:hidden"
+            />
+          </nav>
         </div>
       </header>
-      <div class="cont w-[90rem] max-w-full mx-auto">
+      <div class="cont w-[80rem] max-w-full mx-auto">
         <div
           class="hero-section bg-Very-Light-Gray flex flex-col md:flex-row gap-5 md:items-center"
         >
@@ -54,7 +77,7 @@
             class="hero-txt text-center md:text-left px-5 py-8 md:py-3 mb-10 md:w-[45%]"
           >
             <h1
-              class="main-heading font-light text-3xl text-Dark-Blue leading-9 mb-5 md:mb-10 md:text-7xl"
+              class="main-heading font-light text-3xl text-Dark-Blue leading-9 mb-5 md:mb-10 md:text-6xl"
             >
               Next generation digital banking
             </h1>
@@ -67,16 +90,14 @@
               more.
             </p>
 
-            <a href="#" class="btn mb-5 from-Lime-Green to-Bright-Cyan"
-              >Request Invite</a
-            >
+            <a href="#" class="btn mb-5">Request Invite</a>
           </div>
         </div>
       </div>
     </div>
 
     <main>
-      <section class="choose-us bg-Light-Grayish-Blue py-10 md:py-20">
+      <section class="choose-us bg-Light-Grayish-Blue py-10 md:py-20 px-5">
         <div class="cont w-[80rem] max-w-full mx-auto">
           <div class="subheading-det text-center mb-12 md:text-left md:mb-16">
             <h2
@@ -143,7 +164,7 @@
           </div>
         </div>
       </section>
-      <section class="section-articles py-10 bg-Very-Light-Gray md:py-16">
+      <section class="section-articles py-10 bg-Very-Light-Gray md:py-16 px-5">
         <div class="cont w-[80rem] max-w-full mx-auto">
           <h3 class="article-heading mb-6 text-center md:text-left">
             Latest Articles
@@ -210,17 +231,17 @@
         </div>
       </section>
     </main>
-    <footer class="section-footer py-10 bg-Dark-Blue">
+    <footer class="section-footer py-10 bg-Dark-Blue px-5">
       <div class="cont w-[80rem] max-w-full mx-auto">
         <div
-          class="footer text-center flex flex-col gap-6 items-center md:flex-row"
+          class="footer text-center flex flex-col gap-6 items-center md:flex-row md:justify-between"
         >
           <div class="d">
             <div class="img">
               <img src="images/footer-logo.svg" alt="logo" class="mx-auto" />
             </div>
 
-            <div class="socials flex gap-5 justify-center md:mt-7">
+            <div class="socials flex gap-5 justify-center mt-7">
               <img src="images/icon-facebook.svg" alt="icon-facebook" />
               <img src="images/icon-youtube.svg" alt="icon-youtube" />
               <img src="images/icon-twitter.svg" alt="icon-twitter" />
@@ -229,23 +250,37 @@
             </div>
           </div>
           <ul
-            class="[&>li]:text-Light-Grayish-Blue [&>li]:text-base text-center mt-7 [&>li]:mb-3"
+            class="text-center md:text-left mt-7 [&>li]:mb-3 md:flex md:justify-between md:gap-36"
           >
-            <div>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Contact</a></li>
-              <li><a href="#">Blog</a></li>
+            <div
+              class="[&>li]:text-Light-Grayish-Blue [&>li]:text-base md:[&>li]:text-Light-Grayish-Blue md:[&>li]:text-xl md:[&>li]:mb-2"
+            >
+              <li class="md:hover:text-Lime-Green md:transition-all">
+                <a href="#">About Us</a>
+              </li>
+              <li class="md:hover:text-Lime-Green md:transition-all">
+                <a href="#">Contact</a>
+              </li>
+              <li class="md:hover:text-Lime-Green md:transition-all">
+                <a href="#">Blog</a>
+              </li>
             </div>
-            <div>
-              <li><a href="#">Careers</a></li>
-              <li><a href="#">Support</a></li>
-              <li><a href="#">Privacy Policy</a></li>
+            <div
+              class="[&>li]:text-Light-Grayish-Blue [&>li]:text-base md:[&>li]:text-Light-Grayish-Blue md:[&>li]:text-xl md:[&>li]:mb-2"
+            >
+              <li class="md:hover:text-Lime-Green md:transition-all">
+                <a href="#">Careers</a>
+              </li>
+              <li class="md:hover:text-Lime-Green md:transition-all">
+                <a href="#">Support</a>
+              </li>
+              <li class="md:hover:text-Lime-Green md:transition-all">
+                <a href="#">Privacy Policy</a>
+              </li>
             </div>
           </ul>
           <div>
-            <a href="#" class="btn from-Lime-Green to-Bright-Cyan"
-              >Request Invite</a
-            >
+            <a href="#" class="btn transition-all">Request Invite</a>
             <p
               class="copyright md:block hidden md:text-Grayish-Blue md:text-lg md:mt-8"
             >
@@ -266,5 +301,7 @@
         >Erick Ngechu</a
       >.
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
